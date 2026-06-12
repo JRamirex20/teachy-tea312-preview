@@ -1193,7 +1193,7 @@ let gabaritoBlob2 = null; // separate from provaBlob
 async function initGabaritoBlob() {
   if (gabaritoBlob2) return;
   try {
-    const data = b64ToArrayBuffer(GABA_B64);
+    const data = b64ToArrayBuffer(GABARITO_B64);
     const blob = new Blob([data], { type: 'application/pdf' });
     gabaritoBlob2 = URL.createObjectURL(blob);
   } catch(e) { console.warn('Gabarito PDF load failed', e); }
